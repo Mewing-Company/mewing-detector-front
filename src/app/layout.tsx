@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Inter, Nunito } from "next/font/google";
 import "./globals.css";
+import Providers from "./_components/Providers";
 
-const font = Nunito({ subsets: ["latin"] });
+const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mewing Detector",
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <Providers>
+        <body className={`absolute bg-[#0C0E0F] w-full h-full ${font.className}`}>{children}</body>
+      </Providers>
     </html>
   );
 }
