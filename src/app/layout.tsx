@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Nunito } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "./_components/Providers";
+import { Toaster } from "sonner";
 
 const font = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Providers>
-        <body className={`absolute bg-[#0C0E0F] w-full h-full ${font.className}`}>{children}</body>
+        <body className={`absolute bg-[#0C0E0F] w-full h-full ${font.className}`}>
+          <Toaster position="bottom-left" expand={true} richColors />
+          {children}
+        </body>
       </Providers>
     </html>
   );
