@@ -1,5 +1,5 @@
 import ExamplesSection from "./_components/ExamplesSection";
-import HeroSection from "./_components/HeroSection";
+import HeroSection from "./_components/HeroSection.tsx"
 
 export default function Home() {
   return (
