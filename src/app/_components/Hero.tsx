@@ -1,5 +1,6 @@
 import { Sparkles } from "lucide-react";
 import UploadImage from "./UploadImage";
+import { IoSparklesSharp } from "react-icons/io5";
 
 export default function Hero() {
   return (
@@ -9,18 +10,17 @@ export default function Hero() {
           Mewing Detector
         </h1>
         <span className="text-4xl">
-          <Sparkles
+          <IoSparklesSharp color="#a855f7" className="w-[30px] h-[30px] sm:h-[30px] sm:w-[30px] md:h-[40px] md:w-[40px] lg:h-[40px] lg:w-[40px] xl:w-[45px] xl:h-[45px]"/>
+          {/* <Sparkles
             strokeWidth={1}
             className="text-[#a855f7] fill-[#a855f7] sm:h-[30px] sm:w-[30px] md:h-[40px] md:w-[40px] lg:h-[40px] lg:w-[40px] xl:w-[45px] xl:h-[45px]"
-          />
+          /> */}
           {/* 🤫🧏🏻‍♂️ */}
         </span>
       </div>
 
       <div className="w-[80%] sm:w-full md:w-full lg:w-full xl:w-full h-auto flex justify-center items-center">
-        <p className="text-[#ebf6ff] font-light text-lg text-center">
-          Test your mewing right now to see if you are a Gigachad.
-        </p>
+        <p className="text-[#ebf6ff] font-light text-lg text-center">Test your mewing right now to see if you are a Gigachad.</p>
       </div>
 
       <UploadImage />

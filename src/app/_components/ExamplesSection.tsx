@@ -3,7 +3,7 @@ import ArrayImages from "@/constants/ArrayImages";
 
 export default function ExamplesSection() {
   return (
-    <div className="w-full h-auto flex justify-center items-center gap-5 flex-wrap p-10">
+    <div className="w-full h-auto flex justify-center items-center gap-5 flex-wrap p-10 mt-5">
       {ArrayImages.map((example) => {
         return <CardExamples image={example.image} id={example.id} mewing={example.mewing} key={example.id} example={example.example}/>;
       })}
