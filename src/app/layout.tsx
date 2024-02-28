@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, DM_Sans } from "next/font/google";
+import { Inter, DM_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Providers from "./_components/Providers";
 import { Toaster } from "sonner";
 
-const font = Inter({ subsets: ["latin"] });
+const font = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mewing Detector",

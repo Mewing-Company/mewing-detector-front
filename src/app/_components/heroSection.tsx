@@ -3,17 +3,28 @@ import UploadImage from "./UploadImage";
 
 export default function HeroSection() {
   return (
-    <div className="w-full h-full flex justify-center items-center flex-col gap-5 relative z-10">
-      <div className="w-full h-auto flex justify-center items-center gap-2">
-        <h1 className="text-[2rem] sm:text-5xl md:text-6xl lg:text-6xl xl:text-6xl font-bold gradient-text text-transparent animate-gradient tracking-wide">
+    <div className="w-full h-auto flex justify-center items-center flex-col gap-5 relative z-10 mt-[7rem]">
+      <div className="w-full flex justify-center items-center xl:gap-2 sm:gap-1 ">
+        <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold gradient-text text-transparent animate-gradient tracking-wide p-2 text-center">
           Mewing Detector
         </h1>
         <span className="text-4xl">
-          <Sparkles size={45} strokeWidth={1} className="text-[#a855f7] fill-[#a855f7]" />
+          <Sparkles
+            strokeWidth={1}
+            className="text-[#a855f7] fill-[#a855f7] sm:h-[30px] sm:w-[30px] md:h-[40px] md:w-[40px] lg:h-[40px] lg:w-[40px] xl:w-[45px] xl:h-[45px]"
+          />
           {/* 🤫🧏🏻‍♂️ */}
         </span>
       </div>
+
+      <div className="w-[80%] sm:w-full md:w-full lg:w-full xl:w-full h-auto flex justify-center items-center">
+        <p className="text-[#ebf6ff] font-light text-lg text-center">
+          Test your mewing right now to see if you are a Gigachad.
+        </p>
+      </div>
+
       <UploadImage />
     </div>
   );
 }
+//#71717A

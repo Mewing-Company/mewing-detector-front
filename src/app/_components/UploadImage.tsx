@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/moving-borders";
 
 export default function UploadImage() {
   return (
-    <div className="grid w-full max-w-sm items-center gap-3">
+    <div className="grid w-[22rem] sm:w-[26rem] md:w-[30rem] lg:w-[30rem] xl:w-[30rem] items-center gap-5">
       <Label htmlFor="picture" className="gradient-text text-transparent animate-gradient text-lg">
         Elegí la Imagen
       </Label>
