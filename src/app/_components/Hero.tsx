@@ -1,7 +1,7 @@
 import { Sparkles } from "lucide-react";
 import UploadImage from "./UploadImage";
 
-export default function HeroSection() {
+export default function Hero() {
   return (
     <div className="w-full h-auto flex justify-center items-center flex-col gap-5 relative z-10 mt-[7rem]">
       <div className="w-full flex justify-center items-center xl:gap-2 sm:gap-1 ">
