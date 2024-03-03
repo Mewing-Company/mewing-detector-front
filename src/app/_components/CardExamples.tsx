@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardBody, CardFooter, Chip } from "@nextui-org/react";
 import Image, { StaticImageData } from "next/image";
 import { CheckIcon } from "../../icons/CheckIcon";
+import { IoCloseCircle } from "react-icons/io5";
 
 export default function CardExamples(props: { image: StaticImageData; id: number; mewing: boolean; example: string }) {
   return (
@@ -21,8 +22,12 @@ export default function CardExamples(props: { image: StaticImageData; id: number
           className="px-3 rounded-[0.8rem]"
         />
       </CardBody>
-      <CardFooter className="justify-between shadow-small ml-1 z-10">
-        <Chip startContent={<CheckIcon size={18} />} variant="flat" color={props.mewing ? "secondary" : "danger"}>
+      <CardFooter className="justify-between ml-1 z-10">
+        <Chip
+          startContent={props.mewing ? <CheckIcon size={18} /> : <IoCloseCircle size={18} />}
+          variant="flat"
+          color={props.mewing ? "secondary" : "danger"}
+        >
           {props.mewing ? "Mewing" : "No Mewing"}
         </Chip>
       </CardFooter>
