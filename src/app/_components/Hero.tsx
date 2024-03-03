@@ -1,4 +1,3 @@
-import { Sparkles } from "lucide-react";
 import UploadImage from "./UploadImage";
 import { IoSparklesSharp } from "react-icons/io5";
 
