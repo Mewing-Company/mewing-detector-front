@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="w-full h-auto flex justify-center items-center flex-col gap-2 relative z-10 mt-[4rem]">
       <div className="w-full flex justify-center items-center xl:gap-2 sm:gap-1 ">
-        <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold gradient-text text-transparent animate-gradient tracking-wide p-2 text-center">
+        <h1 className="text-[2.2rem] sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold gradient-text text-transparent animate-gradient tracking-wide p-2 text-center">
           Mewing Detector
         </h1>
         <span className="text-4xl">
