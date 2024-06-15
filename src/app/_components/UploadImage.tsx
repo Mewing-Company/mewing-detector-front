@@ -2,7 +2,7 @@
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button as MovingBorders } from "@/components/ui/moving-borders";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "@nextui-org/button";
 import { predict } from "../_actions/actions";
 import ResultCard from "./ResultCard";

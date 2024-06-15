@@ -18,7 +18,7 @@ export default function Hero() {
         </span>
       </div>
 
-      <div className="w-[80%] sm:w-full md:w-full lg:w-full xl:w-full h-auto flex justify-center items-center">
+      <div className="w-[80%] sm:w-full h-auto flex justify-center items-center">
         <p className="text-[#ebf6ff] font-light text-lg text-center">Test your mewing right now to see if you are a Gigachad.</p>
       </div>
 
